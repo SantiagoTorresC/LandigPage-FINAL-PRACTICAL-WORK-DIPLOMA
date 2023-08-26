@@ -1,3 +1,4 @@
+/* -----------CONFIGURACION HERO----------- */
 
 .GENERAL{
     display: flex;
@@ -8,15 +9,16 @@
 
 .LINEA-VERTICAL{
     width: 4px;
-    height: 50vh;
+    height: 30vh;
     background-color: grey;
     margin-right: 20px;
     margin-left: 60px;
 }
 .CONTENIDO-GENERAL{
-    padding: 20px;
+    padding: 30px;
     /* lo que hace es alejar un poco el texto del lado izquierdo, es decir da espacio entre la linea
     y el contenido */
+    width: 750px;
 }
 
 .CONTENEDOR-ICONOS{
@@ -24,7 +26,20 @@
         flex-direction: column;
         gap: 20px;
         /* esta propiedad lo que hace es interponer un espacio de x pixeles entre cada icono. */
-        margin: 20px 0;
-        /* con el primer valor le doy el espacio tanto para la parte superior como para la inferior. Segundo valor
-        indica que hacia izq o derecha no se aplica. */
+        margin: 20px 53px;
+        /* primer valor le doy el espacio para parte superior e inferior. Segundo valor
+        indica izq y derecha. */
 }
+.ICONOS{
+    font-size: 20px;
+}
+
+.BOTON-HERO{
+    background-color: transparent;
+    border: 3px solid #d66939;
+    color: #d66939;
+    font-size: 16px;
+    cursor: pointer;
+    /* esta propiedad hace que el cursor se modifique al pasar sobre el boton */
+}
+/* -------------FIN DE LA CONFIGURACION DEL HERO-------------- */
