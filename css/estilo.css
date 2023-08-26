@@ -1,12 +1,8 @@
-/* .HERO{
-    margin: 0;
-    padding: 0;
-} */
 
 .GENERAL{
     display: flex;
     align-items: center;
-    /* con el atributo "align-items: center;" estamos diciendole que se debe centrar cpm respecto a
+    /* con el atributo "align-items: center;" estamos diciendole que se debe centrar con respecto a
      la linea creada */
 }
 
@@ -15,8 +11,20 @@
     height: 50vh;
     background-color: grey;
     margin-right: 20px;
+    margin-left: 60px;
 }
 .CONTENIDO-GENERAL{
     padding: 20px;
-    /* lo que hace es alejar un poco el texto del lado izquierdo, es decir de la linea */
+    /* lo que hace es alejar un poco el texto del lado izquierdo, es decir da espacio entre la linea
+    y el contenido */
+}
+
+.CONTENEDOR-ICONOS{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        /* esta propiedad lo que hace es interponer un espacio de x pixeles entre cada icono. */
+        margin: 20px 0;
+        /* con el primer valor le doy el espacio tanto para la parte superior como para la inferior. Segundo valor
+        indica que hacia izq o derecha no se aplica. */
 }
