@@ -1,5 +1,12 @@
 /* -----------CONFIGURACION HERO----------- */
 
+body{
+    font-family: Verdana, Regular, Bold;
+}
+
+h1{
+    font-size: 40px;
+}
 .GENERAL{
     display: flex;
     align-items: center;
@@ -32,9 +39,7 @@
         margin: 20px 53px;
         /* primer valor le doy el espacio para parte superior e inferior. Segundo valor
         indica izq y derecha. */
-}
-.ICONOS{
-    font-size: 20px;
+        font-size: 20px;
 }
 
 .BOTON-HERO{
@@ -68,4 +73,31 @@
     background: linear-gradient(to right, black, transparent);
 }
 
+.FONDO-COMPARTIDO{
+
+}
+
+.mi-icono{
+    color: white;
+}
+
 /* -------------FIN DE LA CONFIGURACION DEL HERO-------------- */
+
+
+/* CONFIGURACION DEL HEADER */
+
+.HEADER-GENERAL{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    flex-direction: row;
+}
+
+.tamanioimg{
+    max-width: 60px;
+    height: auto;
+    /* Con este valor auto hacemos que la img no pierda su proporcion */
+}
+
+
