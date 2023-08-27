@@ -5,6 +5,8 @@
     align-items: center;
     /* con el atributo "align-items: center;" estamos diciendole que se debe centrar con respecto a
      la linea creada */
+     position: relative;
+     /* Con esto solucionamos el problema de la superposicion de elementos (el degrade de fondo) */
 }
 
 .LINEA-VERTICAL{
@@ -19,6 +21,7 @@
     /* lo que hace es alejar un poco el texto del lado izquierdo, es decir da espacio entre la linea
     y el contenido */
     width: 750px;
+    color: #FFFFFF;
 }
 
 .CONTENEDOR-ICONOS{
@@ -42,4 +45,27 @@
     cursor: pointer;
     /* esta propiedad hace que el cursor se modifique al pasar sobre el boton */
 }
+
+.FONDO-HERO{
+    position: relative;
+    background-image: url(../img/foto1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* Esta funcion hacer que la imagen cubra toda la seccion y se amolde. Si utilizamos size:contain lo que hace es amoldarse al tamano de la seccion, pero puede quedar bordes blancos. */
+    /* background-position: center; Si aplico esta propiedad la imagen se centra en la seccion, la imagen buscara adaptarse de manera centrada. */
+}
+
+.FONDO-HERO::before{
+    /* Aqui hemos creado una pseudo-clase, es utilizada para insertar contenido antes del contenido del elemento seleccionado (section en este caso).Esto permite aplicar el degradado a la imagen de fondo. */
+    content: "";
+    /* Es una propiedad que asigna contenido vacio al pseudoelemento. */
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Con estos valores estamos haciendo que el pseudoelemento ocupe todo el espacio de la seccion, que tenga su tamano real */
+    background: linear-gradient(to right, black, transparent);
+}
+
 /* -------------FIN DE LA CONFIGURACION DEL HERO-------------- */
