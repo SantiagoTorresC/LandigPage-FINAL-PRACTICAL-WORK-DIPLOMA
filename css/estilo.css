@@ -188,3 +188,26 @@ h1{
 
 /* ---------------------------------FIN DE LA CONFIGURACION DEL HEADER------------------------------- */
 
+.seccSERV{
+    text-align: center;
+    padding: 20px;
+}
+.SERVICIOS{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.servicios2{
+    margin: 0 20px;
+    text-align: center;
+}
+
+.servicios3{
+    font-size: 70px;
+    margin-bottom: 10px;
+}
+
+.servicios2 h3{
+    margin: 0;
+}
