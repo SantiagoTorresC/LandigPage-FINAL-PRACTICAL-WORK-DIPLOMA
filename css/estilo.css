@@ -103,7 +103,7 @@ h1{
     color: white;
 }
 
-/* -------------FIN DE LA CONFIGURACION DEL HERO-------------- */
+/* -----------------------------------FIN DE LA CONFIGURACION DEL HERO------------------------------------ */
 
 
 /* CONFIGURACION DEL HEADER */
@@ -119,7 +119,7 @@ h1{
     background-repeat: no-repeat;
     background-size: cover;
     color: #FFFFFF;
-    z-index: 2;git
+    z-index: 2;
 }
 
 .HEADER-GENERAL::before{
@@ -145,10 +145,6 @@ h1{
     /* con este valor de margin estoy haciendo un espacio A LA DERECHA para que el texto que lleva al lado no quede pegado. */
 }
 
-.iconoTELEF{
-    margin-left: 800px;
-}
-
 .seleccion a{
     transition: color 0.3s ease;
     color: inherit;
@@ -158,3 +154,37 @@ h1{
 .seleccion a:hover{
     color: #d66939;
 }
+
+.seleccion2{
+    margin-right: 40px;
+}
+
+.MenuNav{
+    display: flex;
+    white-space: nowrap;
+    /* Esta propiedad evita los saltos de linea dentro del enlace, es decir que el texto aparezca todo junto en la misma linea */
+    margin-left: 120px
+}
+
+.contacto{
+    margin-left: 60px;
+
+}
+
+.MenuNav a{
+    text-decoration: none;
+    /* Esto le quita el subrayado que trae. */
+    color: #FFFFFF;
+    margin-right: 10px;
+    /* Esto agrega un espacio entre cada opcion */
+    transition: color 0.3s ease;
+} 
+
+.MenuNav a:hover{
+    color: #d66939;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+/* ---------------------------------FIN DE LA CONFIGURACION DEL HEADER------------------------------- */
+
