@@ -7,9 +7,10 @@ body{
 h1{
     font-size: 40px;
 }
+
 .GENERAL{
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     /* con el atributo "align-items: center;" estamos diciendole que se debe centrar con respecto a
      la linea creada */
      position: relative;
@@ -22,6 +23,9 @@ h1{
     background-color: grey;
     margin-right: 20px;
     margin-left: 60px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    /* Con margin top y bottom lo que hice fue achicar las lineas arriba y abajo, las recorte del valor original. */
 }
 .CONTENIDO-GENERAL{
     padding: 30px;
@@ -29,6 +33,8 @@ h1{
     y el contenido */
     width: 750px;
     color: #FFFFFF;
+    margin-top: 100px;
+    /* Con este valor lo que hicimos fue darle un margen superior para que el texto baje hasta la altura deseada de la seccion */
 }
 
 .CONTENEDOR-ICONOS{
@@ -40,6 +46,16 @@ h1{
         /* primer valor le doy el espacio para parte superior e inferior. Segundo valor
         indica izq y derecha. */
         font-size: 20px;
+        cursor: pointer;
+}
+
+.movimiento{
+    transition: transform 0.3s ease;
+    /* Esto hace que la transicion sea suave. La palabra que va despues de "transition" tiene que ver con el cambio deseado en el hover (VER ABAJO) */
+}
+
+.movimiento:hover{
+    transform: scale(1.4);
 }
 
 .BOTON-HERO{
@@ -48,7 +64,16 @@ h1{
     color: #d66939;
     font-size: 16px;
     cursor: pointer;
-    /* esta propiedad hace que el cursor se modifique al pasar sobre el boton */
+    /* este valor hace que el cursor se modifique al pasar sobre el boton */
+    padding: 12px;
+    /* Este valor me genera una relleno interno hacia todos los lados del box model. Permite agrandar la caja. */
+    transition: background-color 0.3s ease;
+    transition: transform 0.3s ease;
+}
+
+.BOTON-HERO:hover{
+    background-color: white;
+    transform: scale(1.1);
 }
 
 .FONDO-HERO{
@@ -73,10 +98,6 @@ h1{
     background: linear-gradient(to right, black, transparent);
 }
 
-.FONDO-COMPARTIDO{
-
-}
-
 .mi-icono{
     color: white;
 }
@@ -90,14 +111,46 @@ h1{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    flex-direction: row;
+    padding: 10px,20px;
+    /* Con este valor en padding le damos el tamano que tendra el header. */
+    position: relative;
+    background-image: url(../img/foto1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.tamanioimg{
-    max-width: 60px;
-    height: auto;
-    /* Con este valor auto hacemos que la img no pierda su proporcion */
+.HEADER-GENERAL::before{
+    content: "";
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, black, transparent);
 }
 
+.logo{
+    display: flex;
+    align-items: center;
+}
 
+.logo img{
+    max-width: 50px;
+    margin-left: 56px;
+    margin-right: 10px;
+    /* con este valor de margin estoy haciendo un espacio A LA DERECHA para que el texto que lleva al lado no quede pegado. */
+}
+
+.iconoTELEF{
+    margin-left: 800px;
+}
+
+.seleccion a{
+    transition: color 0.3s ease;
+    color: inherit;
+    /* con este valor hacemos que el color del ENLACE sea el mismo que el del texto, NO MAS VIOLETA. */
+}
+
+.seleccion a:hover{
+    color: #d66939;
+}
