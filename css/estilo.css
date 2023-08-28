@@ -18,8 +18,8 @@ h1{
 }
 
 .LINEA-VERTICAL{
-    width: 4px;
-    height: 30vh;
+    width: 3px;
+    height: 25vh;
     background-color: grey;
     margin-right: 20px;
     margin-left: 60px;
@@ -83,6 +83,7 @@ h1{
     background-size: cover;
     /* Esta funcion hacer que la imagen cubra toda la seccion y se amolde. Si utilizamos size:contain lo que hace es amoldarse al tamano de la seccion, pero puede quedar bordes blancos. */
     /* background-position: center; Si aplico esta propiedad la imagen se centra en la seccion, la imagen buscara adaptarse de manera centrada. */
+    
 }
 
 .FONDO-HERO::before{
@@ -117,6 +118,8 @@ h1{
     background-image: url(../img/foto1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    color: #FFFFFF;
+    z-index: 2;git
 }
 
 .HEADER-GENERAL::before{
@@ -127,6 +130,7 @@ h1{
     width: 100%;
     height: 100%;
     background: linear-gradient(to right, black, transparent);
+    z-index: -1;
 }
 
 .logo{
