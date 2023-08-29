@@ -37,6 +37,10 @@ h1{
     /* Con este valor lo que hicimos fue darle un margen superior para que el texto baje hasta la altura deseada de la seccion */
 }
 
+.CONTENIDO-GENERAL p{
+    max-width: 85%;
+}
+
 .CONTENEDOR-ICONOS{
         display: flex;
         flex-direction: column;
@@ -78,9 +82,10 @@ h1{
 
 .FONDO-HERO{
     position: relative;
-    background-image: url(../img/foto1.jpg);
+    background-image: url(../img/herost.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     /* Esta funcion hacer que la imagen cubra toda la seccion y se amolde. Si utilizamos size:contain lo que hace es amoldarse al tamano de la seccion, pero puede quedar bordes blancos. */
     /* background-position: center; Si aplico esta propiedad la imagen se centra en la seccion, la imagen buscara adaptarse de manera centrada. */
     
@@ -115,7 +120,7 @@ h1{
     padding: 10px,20px;
     /* Con este valor en padding le damos el tamano que tendra el header. */
     position: relative;
-    background-image: url(../img/foto1.jpg);
+    background-image: url(../img/herost.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     color: #FFFFFF;
@@ -436,4 +441,4 @@ h1{
     margin-right: 20px;
 }
 
-/* ---------------------------------FIN DE LA CONFIGURACION SECC TRABAJOS------------------------------- */
+/* ------------------------------FIN DE LA CONFIGURACION SECC TRABAJOS------------------------------- */
