@@ -189,7 +189,6 @@ h1{
 
 .seccSERV{
     text-align: center;
-    padding: 20px;
 }
 
 .seccSERV h1{
@@ -225,9 +224,10 @@ h1{
     margin-left: 0px;
     margin-top: 130px;
     margin-bottom: 40px;
+    padding: 0;
 }
 
-/* ---------------------------------FIN DE LA CONFIGURACION DEL SERVICIOS------------------------------- */
+/* ---------------------------------FIN DE LA CONFIGURACION SECC SERVICIOS------------------------------- */
 
 .seccCONOC{
     background-image: url(../img/conocimientos.jpg);
@@ -272,19 +272,19 @@ h1{
 }
 
 .svg1{
-    width: 160px;
+    width: 120px;
     height: auto;
 }
 
 .svg2{
-    width: 150px;
+    width: 110px;
     height: auto;
-    margin-top: 20px;
-    margin-left: 40px;
+    margin-top: 10px;
+    margin-left: 50px;
 }
 
 .texto{
-    margin-left: 40px;
+    margin-left: 50px;
 }
 
 .svg3{
@@ -292,19 +292,51 @@ h1{
     height: auto;
     margin-bottom: 45px;
     /* Con este valor genero espacio hacia abajo para bajar el texto */
-    margin-top: 60px;
+    margin-top: 35px;
+    margin-left: 10px;
+}
+
+.textoGH{
+    margin-left: 10px;
 }
 
 .svg4{
-    width: 230px;
+    width: 220px;
     height: auto;
-    margin-top: 50px;
-    margin-bottom: 45px;
+    margin-top: 40px;
+    margin-bottom: 30px;
     margin-right: 30px;
 }
 
 .svg5{
-    width: 130px;
+    width: 100px;
     height: auto;
-    margin-left: 30px;
+    margin-left: 40px;
+}
+
+.textoCSS{
+    margin-left: 35px;
+}
+
+/* ---------------------------------FIN DE LA CONFIGURACION SECC CONOCIMIENTOS------------------------------- */
+
+.ultimos-trabajos{
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.contenedor-trabajos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trabajos2{
+    text-align: center;
+}
+
+.trabajos2 img{
+    height: auto;
+    width: 100%
 }
