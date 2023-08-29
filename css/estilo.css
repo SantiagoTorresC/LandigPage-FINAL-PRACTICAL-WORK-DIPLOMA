@@ -168,7 +168,6 @@ h1{
 
 .contacto{
     margin-left: 60px;
-
 }
 
 .MenuNav a{
@@ -192,6 +191,10 @@ h1{
     text-align: center;
     padding: 20px;
 }
+
+.seccSERV h1{
+    font-size: 30px;
+}
 .SERVICIOS{
     display: flex;
     justify-content: center;
@@ -199,7 +202,7 @@ h1{
 }
 
 .servicios2{
-    margin: 0 20px;
+    margin: 0 60px;
     text-align: center;
 }
 
@@ -209,5 +212,23 @@ h1{
 }
 
 .servicios2 h3{
-    margin: 0;
+    margin: 0 30px;
+    /* Con esta propiedad le damos un valor tanto para arriba y abajo (el 1ro) como para derecha e izq (2do) */
+}
+
+.linea-horiz{
+    width: 830px;
+    height: 5px;
+    /* Con este valor estamos conviertiendola en horizontal a dif de la vertical del HERO */
+    background-color: #d66939;
+    margin-right: 20px;
+    margin-left: 0px;
+    margin-top: 130px;
+    margin-bottom: 40px;
+}
+
+/* ---------------------------------FIN DE LA CONFIGURACION DEL SERVICIOS------------------------------- */
+
+.CONOC{
+    background-image: url(../img/conocimientos.jpg);
 }
