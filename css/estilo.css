@@ -320,6 +320,76 @@ h1{
 
 /* ---------------------------------FIN DE LA CONFIGURACION SECC CONOCIMIENTOS------------------------------- */
 
+
+.sobremi{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: stretch;
+    margin: 40px 0;
+    /* Margen blanco en la parte superior */
+}
+
+.margen{
+    flex-grow: 1;
+    background-color: white;
+}
+
+.contenedor-sobremi{
+    flex-grow: 2;
+    background-color: #f2f2f2;
+    display: flex;
+}
+
+.contenedor-deimg{
+    width: 50%;
+    padding-left: 12.5%;
+}
+
+.contenedor-deimg img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.contenedor-info{
+    flex-grow: 1;
+    padding: 20px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contenedor-info h1{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.contenedor-info p{
+    margin-bottom: 10px;
+}
+
+.contenedor-info button{
+    align-self: flex-start;
+    background-color: #d66939;
+    color: white;
+    padding: 10px 20px;
+    border: black;
+    cursor: pointer;
+    transition: border-color 0.3s, font-weight 0.3s;
+    transition: transform 0.3s ease;
+}
+
+.contenedor-info button:hover{
+    transform: scale(1.1);
+    border: 2px solid #333;
+    font-weight: bold;
+
+}
+
+/* ---------------------------------FIN DE LA CONFIGURACION SECC SOBREMI------------------------------- */
+
 .ultimos-trabajos{
     text-align: center;
     padding: 20px;
@@ -366,3 +436,4 @@ h1{
     margin-right: 20px;
 }
 
+/* ---------------------------------FIN DE LA CONFIGURACION SECC TRABAJOS------------------------------- */
