@@ -194,10 +194,9 @@
       </section ULTIMOS TRABAJOS>
 
 
-      <section PROCESO>
+      <!-- <section PROCESO>
          <h1>Como es mi proceso de trabajo?</h1>
-         <h3>En base a lo que necesites, tu decides como avanzaremos: </h3>
-         <h3>Plan de negocio</h3>
+         <h3>Identidad Digital</h3>
          <p>Se analiza la marca y crearemos juntos una identidad digital</p>
          <h3>Diseno del Sitio Web.</h3>
          <p> Se presentara una idea clara a traves de un sketch (boceto), tambien es posible trabajar 
@@ -206,46 +205,63 @@
          <h3>Trabajo sobre el codigo</h3>
          <p>Etapa final, el tiempo de desarrollo del codigo para el sitio web dependera de la complejidad de
            cada proyecto.  </p>
-         <h3>Haz crecer tu negocio!</h3>
-         <p>En base al "Plan de negocio" se disena una estrategica de posicionamiento, trabajo en redes sociales
-            e e-mail marketing.</p>
-      </section PROCESO>
+        <h3>Mantenimiento</h3>
+         <p>Puedes optar por contratar mis servicios para realizar actualizaciones durante el transcurso del 
+             mes e incluso puedo proporcionarte el hosting del sitio.</p>
+      </section PROCESO> -->
 
-      <section CONTACTO>
-         <h1>Listo para comenzar?</h1>
-         <h3>Ponte en contacto conmigo</h3>
-         <form action="">
-            <input type="email" name="e-mail" size="35" placeholder="E-mail">
-            <!-- El atributo "placeholder" que se agrego sirve para hacer que el valor que se debe ingresar en el campo
-             aparezca como referencia dentro del misma caja de texto -->
-             <!-- El atributo name sirve para gestionar la informacion que nos llegue cuando el usuario completa
-             el formulario. Identifica al valor introducido. -->
-           <br>
-           <input type="text" name="text" size="35" placeholder="Tu mensaje">
-           <br>
-           <button type="submit">Enviar mensaje</button>         
-         </form>
+
+      <section class="secc-contacto" CONTACTO>
+        <div class="contenido">
+            <h1>Listo para comenzar?</h1>
+            <h3>Ponte en contacto conmigo</h3>
+            <form action="" class="formulario">
+               <input type="email" size="48" placeholder="E-mail" class="datos">
+               <!-- El atributo "placeholder" que se agrego sirve para hacer que el valor que se debe ingresar en el campo
+                aparezca como referencia dentro del misma caja de texto -->
+              <br>
+              <textarea placeholder="Tu mensaje"></textarea>
+              <br>
+              <button type="submit">Enviar Mensaje</button>         
+            </form>
+        </div>
+        
 
         </section CONTACTO>
     </main>
 
-    <footer>
-        <img src="img/LOGO ST WEB DESING.svg" alt="Es una imagen de logo personal">
-        <h4>Disenador Web</h4>
-        <div>
-            <i class="bi bi-instagram"></i>
-            <i class="bi bi-github"></i>
-            <i class="bi bi-linkedin"></i>
-            <br>
-            <i class="bi bi-telephone"></i>
+    <footer class="config-footer">
+        <div class="lado-izq">
+            <img src="img/LOGO ST WEB DESING.svg" alt="Es una imagen de logo personal">
+            <p>Disenador Web</p>
         </div>
-        <p>Politica de privacidad</p>
-        <div>
-         <i class="bi bi-c-circle"></i>
-         <i class="bi bi-r-circle"></i>
+        <div class="lado-derecho">
+            <div class="redes-iconos">
+                <a href="https://www.instagram.com/san.torres.c/" target="_blank" class="movimiento">
+                     <i class="mi-icono bi bi-instagram"></i>
+                 </a>
+
+                 <a href="https://github.com/SantiagoTorresC" target="_blank" class="movimiento">
+                     <i class="mi-icono bi bi-github"></i>
+                 </a>
+
+                 <a href="https://www.linkedin.com/in/santiago-torres-31428953/" target="_blank" 
+                    class="movimiento">
+                     <i class="mi-icono bi bi-linkedin"></i>
+                 </a>
+                
+            </div>
+            <div class="info-contacto">
+                 <P> <span> <i class="bi bi-telephone-fill"></i> </span> +376-654655</P>
+            </div>
+            <div class="derechos">
+                <i class="bi bi-c-circle"></i>
+                <p>Todos los Derechos Reservados</p>
+            </div>
+            <button>Volver al principio</button>
         </div>
-        <p>Todos los Derechos Reservados</p>
-        <button>Volver al principio</button>
+
     </footer>
+
 </body>
 </html>

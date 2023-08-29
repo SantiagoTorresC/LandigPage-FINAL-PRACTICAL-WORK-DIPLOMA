@@ -390,7 +390,6 @@ h1{
     transform: scale(1.1);
     border: 2px solid #333;
     font-weight: bold;
-
 }
 
 /* ---------------------------------FIN DE LA CONFIGURACION SECC SOBREMI------------------------------- */
@@ -442,3 +441,124 @@ h1{
 }
 
 /* ------------------------------FIN DE LA CONFIGURACION SECC TRABAJOS------------------------------- */
+
+.secc-contacto{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/fondoformulario.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.contenido{
+    text-align: center;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+    padding: 20px;
+    box-shadow: #d66939;
+}
+
+input [type="email"]{
+    width: 80%;
+    height: 150%;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+}
+
+textarea{
+    height: 150px;
+    width: 80%;
+    padding: 10px;
+    border: none;
+}
+
+
+button{
+    background-color: #d66939;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+
+/* ------------------------------FIN DE LA CONFIGURACION SECC FORM------------------------------- */
+
+.config-footer{
+    background-color: black;
+    color: #FFFFFF;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lado-izq{
+    display: flex;
+    align-items: center;
+}
+
+.lado-izq img{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.lado-derecho{
+    display: flex;
+    align-items: center;
+}
+
+.redes-iconos{
+    margin-right: 20px;
+}
+
+.redes-iconos a{
+    color: #fff;
+    margin-right: 10px;
+}
+
+.info-contacto{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.icono-telef{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    fill: #fff;
+}
+
+.derechos{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.derechos a{
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+
+}
+
+.boton-footer{
+    background-color: #d66939;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
