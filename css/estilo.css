@@ -324,6 +324,13 @@ h1{
     text-align: center;
     padding: 20px;
     position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.ultimos-trabajos h1{
+    margin-left: 600px;
+    
 }
 
 .contenedor-trabajos{
@@ -340,3 +347,22 @@ h1{
     height: auto;
     width: 100%
 }
+
+.contenedor-lineah1{
+    display: flex;
+    align-items: center;
+    height: 200px;
+}
+
+.linea{
+    flex: 1;
+    border: none;
+    border-top: 8px solid #d66939;
+    margin-right: 10px;
+}
+
+.h1TRABAJOS{
+    margin: 0;
+    margin-right: 20px;
+}
+
