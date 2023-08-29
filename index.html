@@ -16,23 +16,16 @@
         </div>
         
         <nav class="MenuNav">
-            <a href="#">Inicio</a>
-            <a href="#">Servicios</a>
-            <a href="#">Conocimientos</a>
-            <a href="#">Sobre mi</a>
-            <a href="#">Contacto</a>
+            <a href="#Inicio">Inicio</a>
+            <a href="#Servicios">Servicios</a>
+            <a href="#Conocimientos">Conocimientos</a>
+            <a href="#Trabajos">Trabajos</a>
+            <a href="#Sobremi">Sobre mi</a>
+            <a href="#Contacto">Contacto</a>
         </nav>
-    
-        <!-- servicios abajo ira proceso de trabajo
-        conocimientos abajo ira ultimos TRABAJOS
-        sobre mi abajo ira PROCESO
-        contaco -->
-
 
         <div>
             <P> <span> <i class="bi bi-telephone-fill"></i> </span> +376-654655</P>
-            <!-- Se agrego una etiqueta span dentro de la etiqueta p, para que la misma contenga al logo al 
-            lado del texto -->
         </div>
         
         <nav class="seleccion">
@@ -44,7 +37,7 @@
 
     <main>
 
-        <section class="FONDO-HERO">
+        <section id="Inicio" class="FONDO-HERO">
             <div class="GENERAL" GENERAL>
                 <div>
                    <div class="LINEA-VERTICAL" LINEA VERTICAL></div>
@@ -54,8 +47,6 @@
                       <a href="https://www.instagram.com/san.torres.c/" target="_blank" class="movimiento">
                          <i class="mi-icono bi bi-instagram"></i>
                       </a>
-                      <!-- Puse una etiqueta a para introducir el link y redireccionar al hacer clic en la img. 
-                      Esta etiqueta debe contener al icono para que funcione asi. -->
                       
                       <a href="https://github.com/SantiagoTorresC" target="_blank" class="movimiento">
                          <i class="mi-icono bi bi-github"></i>
@@ -86,7 +77,7 @@
              </div GENERAL>
         </section>
 
-      <section class="seccSERV">
+      <section id="Servicios" class="seccSERV">
         <br><br><br>
          <h1>Lo que puedo hacer por ti:</h1>
          <br><br><br><br>
@@ -108,7 +99,7 @@
 
       </section SERVICIOS>
 
-      <section class="seccCONOC" CONOCIMIENTOS>
+      <section id="Conocimientos" class="seccCONOC" CONOCIMIENTOS>
         <h1>Mis Conocimientos</h1>
         <br><br><br>
         <div class="CONOCIMIENTOS">
@@ -139,7 +130,7 @@
       </section CONOCIMIENTOS>
     
 
-      <section class="sobremi">
+      <section id="Sobremi" class="sobremi">
         <div class="margen"></div>
         <div class="contenedor-sobremi">
             <div class="contenedor-deimg">
@@ -158,13 +149,13 @@
                     En conclusion, de mi parte recibiras una sonrisa y un 
                      excelente trabajo</p>
                 <h2>Ahora que sabes sobre mi...</h2>
-                <button>Hagamos algo increible juntos!</button>
+                <a href="#Contacto" class="btn btn-primary botonss">Hagamos algo increible juntos!</a>
             </div>
         </div>
         <div class="margen"></div>
       </section SOBRE MI>
 
-      <section ULTIMOS TRABAJOS>
+      <section id="Trabajos" ULTIMOS TRABAJOS>
         <div class="contenedor-lineah1">
             <hr class="linea">
             <h1 class="h1TRABAJOS">Algunos de mis trabajos</h1>
@@ -211,18 +202,16 @@
       </section PROCESO> -->
 
 
-      <section class="secc-contacto" CONTACTO>
+      <section id="Contacto" class="secc-contacto" CONTACTO>
         <div class="contenido">
             <h1>Listo para comenzar?</h1>
             <h3>Ponte en contacto conmigo</h3>
             <form action="" class="formulario">
                <input type="email" size="48" placeholder="E-mail" class="datos">
-               <!-- El atributo "placeholder" que se agrego sirve para hacer que el valor que se debe ingresar en el campo
-                aparezca como referencia dentro del misma caja de texto -->
               <br>
               <textarea placeholder="Tu mensaje"></textarea>
               <br>
-              <button type="submit">Enviar Mensaje</button>         
+              <button type="submit" class="movimiento3">Enviar Mensaje</button>         
             </form>
         </div>
         
@@ -258,7 +247,10 @@
                 <i class="bi bi-c-circle"></i>
                 <p>Todos los Derechos Reservados</p>
             </div>
-            <button>Volver al principio</button>
+            <a href="index.html">
+                <button class="boton-footer">Volver al principio</button>
+            </a>
+        
         </div>
 
     </footer>

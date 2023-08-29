@@ -10,11 +10,7 @@ h1{
 
 .GENERAL{
     display: flex;
-    /* align-items: center; */
-    /* con el atributo "align-items: center;" estamos diciendole que se debe centrar con respecto a
-     la linea creada */
      position: relative;
-     /* Con esto solucionamos el problema de la superposicion de elementos (el degrade de fondo) */
 }
 
 .LINEA-VERTICAL{
@@ -25,16 +21,12 @@ h1{
     margin-left: 60px;
     margin-top: 40px;
     margin-bottom: 40px;
-    /* Con margin top y bottom lo que hice fue achicar las lineas arriba y abajo, las recorte del valor original. */
 }
 .CONTENIDO-GENERAL{
     padding: 30px;
-    /* lo que hace es alejar un poco el texto del lado izquierdo, es decir da espacio entre la linea
-    y el contenido */
     width: 750px;
     color: #FFFFFF;
     margin-top: 100px;
-    /* Con este valor lo que hicimos fue darle un margen superior para que el texto baje hasta la altura deseada de la seccion */
 }
 
 .CONTENIDO-GENERAL p{
@@ -45,17 +37,13 @@ h1{
         display: flex;
         flex-direction: column;
         gap: 20px;
-        /* esta propiedad lo que hace es interponer un espacio de x pixeles entre cada icono. */
         margin: 20px 53px;
-        /* primer valor le doy el espacio para parte superior e inferior. Segundo valor
-        indica izq y derecha. */
         font-size: 20px;
         cursor: pointer;
 }
 
 .movimiento{
     transition: transform 0.3s ease;
-    /* Esto hace que la transicion sea suave. La palabra que va despues de "transition" tiene que ver con el cambio deseado en el hover (VER ABAJO) */
 }
 
 .movimiento:hover{
@@ -68,9 +56,7 @@ h1{
     color: #d66939;
     font-size: 16px;
     cursor: pointer;
-    /* este valor hace que el cursor se modifique al pasar sobre el boton */
     padding: 12px;
-    /* Este valor me genera una relleno interno hacia todos los lados del box model. Permite agrandar la caja. */
     transition: background-color 0.3s ease;
     transition: transform 0.3s ease;
 }
@@ -85,22 +71,16 @@ h1{
     background-image: url(../img/herost.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    /* Esta funcion hacer que la imagen cubra toda la seccion y se amolde. Si utilizamos size:contain lo que hace es amoldarse al tamano de la seccion, pero puede quedar bordes blancos. */
-    /* background-position: center; Si aplico esta propiedad la imagen se centra en la seccion, la imagen buscara adaptarse de manera centrada. */
-    
+    background-position: center;   
 }
 
 .FONDO-HERO::before{
-    /* Aqui hemos creado una pseudo-clase, es utilizada para insertar contenido antes del contenido del elemento seleccionado (section en este caso).Esto permite aplicar el degradado a la imagen de fondo. */
     content: "";
-    /* Es una propiedad que asigna contenido vacio al pseudoelemento. */
     position:absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    /* Con estos valores estamos haciendo que el pseudoelemento ocupe todo el espacio de la seccion, que tenga su tamano real */
     background: linear-gradient(to right, black, transparent);
 }
 
@@ -118,7 +98,6 @@ h1{
     justify-content: space-between;
     align-items: center;
     padding: 10px,20px;
-    /* Con este valor en padding le damos el tamano que tendra el header. */
     position: relative;
     background-image: url(../img/herost.jpg);
     background-repeat: no-repeat;
@@ -147,13 +126,11 @@ h1{
     max-width: 50px;
     margin-left: 56px;
     margin-right: 10px;
-    /* con este valor de margin estoy haciendo un espacio A LA DERECHA para que el texto que lleva al lado no quede pegado. */
 }
 
 .seleccion a{
     transition: color 0.3s ease;
     color: inherit;
-    /* con este valor hacemos que el color del ENLACE sea el mismo que el del texto, NO MAS VIOLETA. */
 }
 
 .seleccion a:hover{
@@ -165,22 +142,20 @@ h1{
 }
 
 .MenuNav{
+    margin-right: 30px;
     display: flex;
     white-space: nowrap;
-    /* Esta propiedad evita los saltos de linea dentro del enlace, es decir que el texto aparezca todo junto en la misma linea */
-    margin-left: 120px
+    margin-left: 60px
 }
 
 .contacto{
-    margin-left: 60px;
+    margin-left: 10px;
 }
 
 .MenuNav a{
     text-decoration: none;
-    /* Esto le quita el subrayado que trae. */
     color: #FFFFFF;
     margin-right: 10px;
-    /* Esto agrega un espacio entre cada opcion */
     transition: color 0.3s ease;
 } 
 
@@ -217,13 +192,11 @@ h1{
 
 .servicios2 h3{
     margin: 0 30px;
-    /* Con esta propiedad le damos un valor tanto para arriba y abajo (el 1ro) como para derecha e izq (2do) */
 }
 
 .linea-horiz{
     width: 830px;
     height: 5px;
-    /* Con este valor estamos conviertiendola en horizontal a dif de la vertical del HERO */
     background-color: #d66939;
     margin-right: 20px;
     margin-left: 0px;
@@ -296,7 +269,6 @@ h1{
     width: 190px;
     height: auto;
     margin-bottom: 45px;
-    /* Con este valor genero espacio hacia abajo para bajar el texto */
     margin-top: 35px;
     margin-left: 10px;
 }
@@ -332,7 +304,6 @@ h1{
     display: flex;
     align-items: stretch;
     margin: 40px 0;
-    /* Margen blanco en la parte superior */
 }
 
 .margen{
@@ -375,7 +346,7 @@ h1{
     margin-bottom: 10px;
 }
 
-.contenedor-info button{
+.botonss{
     align-self: flex-start;
     background-color: #d66939;
     color: white;
@@ -386,7 +357,7 @@ h1{
     transition: transform 0.3s ease;
 }
 
-.contenedor-info button:hover{
+.botonss:hover{
     transform: scale(1.1);
     border: 2px solid #333;
     font-weight: bold;
@@ -483,15 +454,22 @@ textarea{
 }
 
 
-button{
+.movimiento3{
     background-color: #d66939;
     color: #FFFFFF;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
     margin-top: 20px;
+    transition: border-color 0.3s, font-weight 0.3s;
+    transition: transform 0.3s ease;
 }
 
+.movimiento3:hover{
+    transform: scale(1.1);
+border: 2px solid #333;
+font-weight: bold;
+}
 
 /* ------------------------------FIN DE LA CONFIGURACION SECC FORM------------------------------- */
 
@@ -562,3 +540,5 @@ button{
     padding: 10px 20px;
     cursor: pointer;
 }
+
+/* ------------------------------FIN DE LA CONFIGURACION SECC FOOTER!!------------------------------- */
